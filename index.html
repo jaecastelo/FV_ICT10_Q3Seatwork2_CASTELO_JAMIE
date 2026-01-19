@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seatwork 2 Third Quarter</title>
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+<style>
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #eaf7e4, #eef1ff);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: white;
+    width: 520px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+h2 { text-align: center; margin-bottom: 20px; }
+.question { margin-top: 15px; }
+select { width: 100%; padding: 8px; margin-top: 8px; border-radius: 6px; }
+.signup-btn {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right,#F075AE,#FDB5CE,#AEDEFC,#6594B1);
+}
+#output { margin-top: 20px; font-weight: bold; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="card">
+<h2>Seatwork 2 Third Quarter</h2>
+
+<div class="question">
+Are you done with the online registration?<br>
+<input type="radio" name="registration" value="yes"> Yes
+<input type="radio" name="registration" value="no"> No
+</div>
+
+<div class="question">
+Do you have the medical clearance from the clinic?<br>
+<input type="radio" name="medical" value="yes"> Yes
+<input type="radio" name="medical" value="no"> No
+</div>
+
+<div class="question">
+What’s your Grade & Section?
+<select id="grade">
+<option value="">Select Grade</option>
+<option value="7">Grade 7</option>
+<option value="8">Grade 8</option>
+<option value="9">Grade 9</option>
+<option value="10">Grade 10</option>
+</select>
+<select id="section">
+<option value="">Select Section</option>
+<option value="Ruby">Ruby</option>
+<option value="Topaz">Topaz</option>
+<option value="Emerald">Emerald</option>
+<option value="Jade">Jade</option>
+<option value="Sapphire">Sapphire</option>
+</select>
+</div>
+
+<button id="signupBtn" type="button" class="signup-btn">Sign up</button>
+
+<div id="output"></div>
+</div>
+
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
